@@ -9,6 +9,7 @@ import './index.css'
 import Homepage from './pages/Homepage.jsx';
 import ProductList from './pages/ProductList.jsx'
 import ProductDescription from './pages/ProductDescription'
+import ProductDescriptionTest from './pages/ProductDescriptionTest'
 import Faq from './pages/Faq.jsx';
 import TermsAndConditions from './pages/TermsAndConditions.jsx';
 import Timeline from './pages/Timeline.jsx'
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
   {
     path: "/ProductDescription",
     element: <ProductDescription />,
+  },
+  {
+    path: "/ProductDescriptionTest",
+    element: <ProductDescriptionTest />,
   }
 ]);
 

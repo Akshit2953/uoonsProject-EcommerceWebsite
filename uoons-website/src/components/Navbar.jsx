@@ -28,26 +28,28 @@ const DropdownLinks = [
 const Navbar = () => {
   return (
     <div className="shadow-md bg-white duration-200 relative z-50">
+
       {/* upper Navbar */}
-      <div className="bg-white border border-b-orange-600 p-2 py-3">
-        <div className="container flex justify-between items-center">
+      <div className="bg-white border-b border-b-orange-600 p-2 py-3">
+        <div className="container flex flex-col md:flex-row justify-center md:justify-between items-center">
           <div>
-            <a href="#" className="font-bold text-2xl sm:text-3xl">
-              <img src={Logo} alt="Logo" className="w-fit" />
+            <a href="/home">
+              <img src={Logo} alt="Uoons-Logo" />
             </a>
           </div>
 
-          <div className="flex justify-between items-center gap-4">
+          <div className="w-full flex flex-col md:flex-row  items-center gap-4">
             {/* search bar */}
-            <div className="relative group hidden sm:block">
+            <div className="relative w-full">
               <input
                 type="text"
-                placeholder="Search..."
-                className="w-[200px] sm:w-[200px] md:w-[300px] lg:[450px] sm:group-hover:w-[300px] md:group-hover:w-[400px] lg:group-hover:w-[500px] transition-all duration-300 rounded-lg border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-orange-600   "
+                placeholder="Search your favorite products and brands"
+                className="w-full lg:w-[450px] lg:hover:w-[500px] transition-all duration-300 rounded-lg border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-orange-600   "
               />
               <BiSearchAlt className="text-gray-500 group-hover:text-orange-600 absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
 
+            <div className="flex gap-3">
             {/* Profile button */}
             <button
               
@@ -58,6 +60,7 @@ const Navbar = () => {
               </span>
               <FaRegUser className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
+
             {/* cart button */}
             <button
              
@@ -68,6 +71,7 @@ const Navbar = () => {
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
+            </div>
           </div>
         </div>
       </div>

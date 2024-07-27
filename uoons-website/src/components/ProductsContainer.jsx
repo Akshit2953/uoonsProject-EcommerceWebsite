@@ -95,7 +95,7 @@ const ProductsContainer = (props) => {
                   className="h-[120px] w-full object-contain rounded-md"
                 />
                 <div>
-                  <h3 className="font-semibold text-lg h-20 overflow-hidden">{data.product_name}</h3>
+                  <h3 className="font-semibold text-lg h-10 overflow-hidden">{data.product_name}</h3>
                   <div className="flex items-center gap-1 text-yellow-500">
                     <FaStar />
                     {/* rating */}
